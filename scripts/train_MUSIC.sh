@@ -29,7 +29,7 @@ OPTS+="--audLen 65535 "
 OPTS+="--audRate 11025 "
 
 # learning params
-OPTS+="--num_gpus 2 "
+OPTS+="--num_gpus 1 "
 OPTS+="--workers 48 "
 OPTS+="--batch_size_per_gpu 20 "
 OPTS+="--lr_frame 1e-4 "
@@ -43,4 +43,7 @@ OPTS+="--disp_iter 20 "
 OPTS+="--num_vis 40 "
 OPTS+="--num_val 256 "
 
+# eval step
+OPTS+="--eval_epoch 5 "
+OPTS+="--dup_trainset 1 "
 python -u main.py $OPTS
