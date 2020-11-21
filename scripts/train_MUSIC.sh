@@ -29,7 +29,7 @@ OPTS+="--audLen 65535 "
 OPTS+="--audRate 11025 "
 
 # learning params
-OPTS+="--num_gpus 4 "
+OPTS+="--num_gpus 2 "
 OPTS+="--workers 48 "
 OPTS+="--batch_size_per_gpu 20 "
 OPTS+="--lr_frame 1e-4 "
